@@ -1,0 +1,56 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: samnetlib - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5D0.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../Include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/samnetlib.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\workdir\SDK\SDK_v4.17\SDK_v4.17\ÍøÂç¿â&²¥·Å¿â\VC_demo\samnetlibDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5D0.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5D1.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/samnetlib.pdb" /debug /machine:I386 /nodefaultlib:"libc.lib" /out:"../bin/samnetlib.exe" /pdbtype:sept /libpath:"../" 
+".\Debug\CHI_ADEC_DEC.obj"
+".\Debug\CHI_AENC_ENC.obj"
+".\Debug\CHI_AI_MM.obj"
+".\Debug\CHI_AO_MM.obj"
+".\Debug\CHI_COMMON_RingBuffer.obj"
+".\Debug\HI_AI_Buffer.obj"
+".\Debug\samnetlib.obj"
+".\Debug\samnetlibDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\samnetlib.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5D1.tmp"
+<h3>Output Window</h3>
+Compiling...
+samnetlibDlg.cpp
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5D3.tmp" with contents
+[
+/nologo /o"Debug/samnetlib.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\CHI_ADEC_DEC.sbr"
+".\Debug\CHI_AENC_ENC.sbr"
+".\Debug\CHI_AI_MM.sbr"
+".\Debug\CHI_AO_MM.sbr"
+".\Debug\CHI_COMMON_RingBuffer.sbr"
+".\Debug\HI_AI_Buffer.sbr"
+".\Debug\samnetlib.sbr"
+".\Debug\samnetlibDlg.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5D3.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+samnetlib.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

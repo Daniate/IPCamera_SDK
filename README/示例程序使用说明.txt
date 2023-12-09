@@ -1,0 +1,72 @@
+SDKDemo：
+
+打开 ".\bin\SDKDemo.exe" 或 ".\网络库&播放库\bin\SDKDemo.exe"
+
+在“登录信息”区域中，填写以下内容：
+主机，也就是网络摄像头的局域网IP地址
+端口，80（默认）
+用户，admin（默认）
+密码，也就是网络摄像头的密码（可在名为CamHipro的手机app中进行设置）
+
+然后，点击“连接”，即可连接上网络摄像头，并看到相关画面。
+
+==============================================================
+
+samnetlib：
+
+打开 ".\bin\samnetlib.exe" 或 ".\网络库&播放库\bin\samnetlib.exe"
+
+在“登录信息”区域中，填写以下内容：
+Host，也就是网络摄像头的局域网IP地址
+Port，80（默认）
+User，admin（默认）
+Password，也就是网络摄像头的密码（可在名为CamHipro的手机app中进行设置）
+
+然后，点击“连接”，即可连接上网络摄像头。
+依次点击“开始码流”、“播放”，即可看到相关画面。
+
+==============================================================
+
+在浏览器中进行操作：
+输入网络摄像头的局域网IP地址，在弹框中输入
+用户，admin（默认）
+密码，也就是网络摄像头的密码（可在名为CamHipro的手机app中进行设置）
+
+登录成功后，会显示两个链接：
+1. 电脑观看
+2. 安装软件（初次使用）
+
+点击“安装软件（初次使用）”链接，会下载一个软件，这个软件是针对IE浏览器做的插件
+
+点击“电脑观看”链接，左侧有“实时监看”、“参数设置”两个选项卡。
+
+在“参数设置 > 网络设置 > 网络设置”中，可以看到RTSP和RTMP端口。
+可通过VLC media player进行播放：rtsp://<摄像头IP地址>:554/11，例如rtsp://192.168.0.103:554/11
+虽然显示有RTMP端口，但其实并没有支持RTMP。
+
+在“参数设置 > 网络设置 > ONVIF设置”中，可以看到ONVIF相关内容。
+在“参数设置 > 系统设置 > 设备信息”中，可以看到设备信息相关内容。
+
+====================================================================================
+
+如何在Windows 11中运行IE浏览器：
+
+在 Windows PowerShell 中，执行：
+$ie = New-object -com Internetexplorer.application
+$ie.Visible = $true
+
+如果上述两行内容是在 .ps1 脚本文件中，想要执行该脚本文件，先在 Windows PowerShell 中执行：
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+然后右键点击脚本文件，选择“使用PowerShell运行”
+
+下载Flash：
+http://www.adobe.com/go/getflashplayer/
+https://archive.org/details/flashplayer_old
+https://www.flash.cn/cdm/latest/flashcenter_pp_ax_install_cn.exe
+
+测试是否已安装Flash: 
+https://isflashinstalled.com/
+
+====================================================================================
+
+使用ONVIF Device Manager可以搜索局域网中的网络摄像头，并可以观看Live Video、Video Streaming。

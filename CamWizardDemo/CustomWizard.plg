@@ -1,0 +1,70 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CustomWizard - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/CustomWizard.res" /d "NDEBUG" /d "_AFXDLL" "D:\SDK\中性SDK\SDK版本\SDK_v4.14\CamWizardDemo\CustomWizard.rc"" 
+Creating temporary file "C:\DOCUME~1\Fanjf\LOCALS~1\Temp\RSP77.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../Include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D HI_OS_TYPE=HI_OS_WIN32 /D "HI_OS_WIN32" /Fp"Release/CustomWizard.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\SDK\中性SDK\SDK版本\SDK_v4.14\CamWizardDemo\CheckUser.cpp"
+"D:\SDK\中性SDK\SDK版本\SDK_v4.14\CamWizardDemo\CustomWizard.cpp"
+"D:\SDK\中性SDK\SDK版本\SDK_v4.14\CamWizardDemo\CustomWizardDlg.cpp"
+"D:\SDK\中性SDK\SDK版本\SDK_v4.14\CamWizardDemo\Step1.cpp"
+"D:\SDK\中性SDK\SDK版本\SDK_v4.14\CamWizardDemo\Step2.cpp"
+"D:\SDK\中性SDK\SDK版本\SDK_v4.14\CamWizardDemo\Step3.cpp"
+"D:\SDK\中性SDK\SDK版本\SDK_v4.14\CamWizardDemo\Step4.cpp"
+"D:\SDK\中性SDK\SDK版本\SDK_v4.14\CamWizardDemo\Wizard.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Fanjf\LOCALS~1\Temp\RSP77.tmp" 
+Creating temporary file "C:\DOCUME~1\Fanjf\LOCALS~1\Temp\RSP78.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../Include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D HI_OS_TYPE=HI_OS_WIN32 /D "HI_OS_WIN32" /Fp"Release/CustomWizard.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\SDK\中性SDK\SDK版本\SDK_v4.14\CamWizardDemo\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Fanjf\LOCALS~1\Temp\RSP78.tmp" 
+Creating temporary file "C:\DOCUME~1\Fanjf\LOCALS~1\Temp\RSP79.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/HiCamSearcher.pdb" /machine:I386 /out:"../bin/HiCamSearcher.exe" /libpath:"../Lib" 
+".\Release\CheckUser.obj"
+".\Release\CustomWizard.obj"
+".\Release\CustomWizardDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\Step1.obj"
+".\Release\Step2.obj"
+".\Release\Step3.obj"
+".\Release\Step4.obj"
+".\Release\Wizard.obj"
+".\Release\CustomWizard.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Fanjf\LOCALS~1\Temp\RSP79.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CheckUser.cpp
+CustomWizard.cpp
+CustomWizardDlg.cpp
+Step1.cpp
+Step2.cpp
+D:\SDK\中性SDK\SDK版本\SDK_v4.14\CamWizardDemo\Step2.cpp(230) : error C2664: 'HI_VSCP_DEVSCLI_RegistSearchProc' : cannot convert parameter 2 from 'int (const void *,char *,HI_S_VSCP_DEVINFO *,void *)' to 'int (__cdecl *)(const void *,char *,HI_S_VSCP_DEVINFO *,void *)'
+        None of the functions with this name in scope match the target type
+Step3.cpp
+D:\SDK\中性SDK\SDK版本\SDK_v4.14\CamWizardDemo\Step3.cpp(388) : error C2664: 'HI_VSCP_DEVSCLI_RegistCmdProc' : cannot convert parameter 2 from 'int (const void *,char *,HI_S_VSCP_DEVSCLI_Cmd_ResponsInfo *,void *)' to 'int (__cdecl *)(const void *,char *,HI_S_VSCP_DEVSCLI_Cmd_ResponsInfo *,void *)'
+        None of the functions with this name in scope match the target type
+Step4.cpp
+Wizard.cpp
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+HiCamSearcher.exe - 2 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
